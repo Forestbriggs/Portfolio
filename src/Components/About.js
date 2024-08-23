@@ -11,12 +11,12 @@ const About = () => {
                 <div className='AboutText'>
                     <h1 className='AboutTextHeading' >Get to <b>know</b> me!</h1>
                     <p>
-                        Hi, my name is <b>Devansh Sahni</b> and I am from New Delhi, India.
-                        I'm a <b>MERN stack web developer</b> and a final year college student pursuing <b>BTech in CSE</b>. <br /><br />
-                        I have done an internship as a <b>software developer</b> at GoalFi which is a fintech startup.
-                        I love to create original projects with beautiful designs, you can check out some of my work in the projects section.<br /><br />
+                        Hi, my name is <b>Forest Briggs</b> and I am from Eugene, Oregon.
+                        I'm a <b>Full stack web developer</b> and recent graduate of <b>App Academy</b>. <br /><br />
+                        I love to create innovative projects with intuitive designs, you can check out some of my work in the projects section.<br /><br />
                         I am <b>open</b> to new collaborations or work where I can contribute and grow. Feel free to connect with me, links are in the footer.<br />
-                        Apart from coding I love to do photography, you can check out some of my shots here <a href="https://www.instagram.com/devansh_sahni_/?hl=en" target='_blank' rel='noreferrer noopener'>Instagram.</a>
+                        Apart from coding I love Jesus
+                        {/* TODO add something here */}
                     </p>
                 </div>
 
@@ -36,18 +36,21 @@ const About = () => {
             <div className='skills'>
 
                 <Skills skill='React' />
+                <Skills skill='Redux' />
+                <Skills skill='Flask' />
+                <Skills skill='Tailwind' />
                 <Skills skill='Node' />
                 <Skills skill='Express' />
-                <Skills skill='MongoDb' />
+                <Skills skill='Sequelize' />
+                <Skills skill='PostgreSQL' />
                 <Skills skill='Git' />
                 <Skills skill='Github' />
+                <Skills skill='Docker' />
                 <Skills skill='Javascript' />
-                <Skills skill='C++' />
+                <Skills skill='Python' />
                 <Skills skill='Postman' />
                 <Skills skill='Figma' />
-                <Skills skill='Vercel' />
                 <Skills skill='Npm' />
-                <Skills skill='Bootstrap' />
 
             </div>
         </>
