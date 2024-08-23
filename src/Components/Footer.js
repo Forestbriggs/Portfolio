@@ -1,21 +1,21 @@
 import React from 'react';
-import {FaGithub, FaLinkedin} from "react-icons/fa";
-import {GrMail} from "react-icons/gr";
-import {SiLeetcode} from "react-icons/si"
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { GrMail } from "react-icons/gr";
+import { SiLeetcode } from "react-icons/si"
 
 const Footer = () => {
-  return (
-    <footer>
-      <h4>Developed by Devansh Sahni</h4>
-      <h4>Copyright &copy; 2023 DS</h4>
-      <div className='footerLinks'>
-        <a href="https://github.com/DevanshSahni" target='_blank'><FaGithub/></a>
-        <a href="https://www.linkedin.com/in/devansh-sahni/" target='_blank'><FaLinkedin/></a>
-        <a href='mailTo:devanshsahni@gmail.com' target='_blank'><GrMail/></a>
-        <a href="https://leetcode.com/sahni1403/" target="_blank"><SiLeetcode/></a>
-      </div>
-    </footer>
-  )
+    return (
+        <footer>
+            <h4>Developed by Forest Briggs</h4>
+            <h4>Copyright &copy; 2024 FB</h4>
+            <div className='footerLinks'>
+                <a href="https://github.com/Forestbriggs" target='_blank' rel='noreferrer noopener'><FaGithub /></a>
+                <a href="https://www.linkedin.com/in/forest-briggs/" target='_blank' rel='noreferrer noopener'><FaLinkedin /></a>
+                <a href='mailTo:forestbriggs14@gmail.com' target='_blank' rel='noreferrer noopener'><GrMail /></a>
+                <a href="https://leetcode.com/Forestbriggs/" target="_blank" rel='noreferrer noopener'><SiLeetcode /></a>
+            </div>
+        </footer>
+    )
 }
 
 export default Footer
