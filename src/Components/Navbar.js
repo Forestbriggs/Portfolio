@@ -43,7 +43,7 @@ const Nav = () => {
         <nav className={navbarblur ? 'Navbar blur' : 'Navbar'}>
 
             <h1 title='Reload' onClick={() => window.location.reload(true)} className='Logo'>
-                <img src='/images/circle-logo.png' height={50}></img>
+                <img src='/images/circle-logo.png' alt='Forest Briggs Logo' height={50}></img>
             </h1>
 
             <div className='Hamburger' onClick={showMenu}>

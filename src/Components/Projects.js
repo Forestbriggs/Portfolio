@@ -1,19 +1,17 @@
 import React from 'react';
 import ProjectBox from './ProjectBox';
-import NewsletterImage from '../images/NewsletterImage.png';
-import RogfreeImage from '../images/RogfreeImage.png';
-import TindogImage from '../images/TindogImage.png';
-import WigglesImage from '../images/WigglesImage.png';
+import GLGImage from '../images/GLGImage.png';
+import ApplySageImage from '../images/ApplySageImage.png';
+import Q_UnderstackImage from '../images/Q_UnderstackImage.png';
 
 const Projects = () => {
     return (
         <div>
             <h1 className='projectHeading'>My <b>Projects</b></h1>
             <div className='project'>
-                <ProjectBox projectPhoto={WigglesImage} projectName="Wiggles" />
-                <ProjectBox projectPhoto={NewsletterImage} projectName="Newsletter" />
-                <ProjectBox projectPhoto={RogfreeImage} projectName="RogFree" />
-                <ProjectBox projectPhoto={TindogImage} projectName="Tindog" />
+                <ProjectBox projectPhoto={ApplySageImage} projectName="ApplySage" />
+                <ProjectBox projectPhoto={Q_UnderstackImage} projectName="Q-Understack" />
+                <ProjectBox projectPhoto={GLGImage} projectName="Grand Line Gatherings" />
             </div>
 
         </div>

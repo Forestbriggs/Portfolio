@@ -1,8 +1,7 @@
 import React from 'react';
-import { CgCPlusPlus } from "react-icons/cg";
-import { FaReact, FaPython, FaGitAlt, FaGithub, FaNpm, FaFigma, FaBootstrap, FaFlask, FaDocker } from "react-icons/fa";
-import { DiNodejs, DiJavascript1, DiDocker } from "react-icons/di";
-import { SiDocker, SiExpress, SiFlask, SiMongodb, SiPostgresql, SiPostman, SiRedux, SiReduxsaga, SiSequelize, SiTailwindcss, SiVercel } from "react-icons/si";
+import { FaReact, FaPython, FaGitAlt, FaGithub, FaNpm, FaFigma } from "react-icons/fa";
+import { DiNodejs, DiJavascript1 } from "react-icons/di";
+import { SiDocker, SiExpress, SiFlask, SiPostgresql, SiPostman, SiRedux, SiSequelize, SiTailwindcss } from "react-icons/si";
 
 const Skills = ({ skill }) => {
     const icon = {

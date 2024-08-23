@@ -4,44 +4,42 @@ import { CgFileDocument } from "react-icons/cg";
 
 
 const ProjectBox = ({ projectPhoto, projectName }) => {
+    const nameKey = projectName.split('-').join('').split(' ').join('');
+
     const desc = {
-        TindogDesc: "This website is a landing page of Tinder but for dogs. It is a responsive website which was made to understand Bootstrap. I also learned how to host my project on Github and then how to deploy that project using Github pages.",
-        TindogGithub: "https://github.com/DevanshSahni/tindog",
-        TindogWebsite: "https://devanshsahni.github.io/tindog/",
+        ApplySageDesc: "A custom job application tracker built with React/Redux, Flask/SQLAlchemy, PostgreSQL, and Tailwind CSS. Designed to streamline my job search and crafted for real-world use—if you're a recruiter, there's a good chance I'm tracking my application to your company right here—no pressure!",
+        ApplySageGithub: "https://github.com/Forestbriggs/apply_sage",
+        ApplySageWebsite: "https://applysage.onrender.com/",
 
-        RogFreeDesc: "A website that shows you over seven specialized yoga postures for specific diseases or health problems. This was a group project made in a team of two for a 36-hour-long online hackathon named Hackodisha 2.0.",
-        RogFreeGithub: "https://github.com/DevanshSahni/Rog-Free",
-        RogFreeWebsite: "https://devanshsahni.github.io/Rog-Free/",
+        QUnderstackDesc: "A Stack Overflow clone created by a three-developer team to practice Agile development and Docker containerization. Built with React/Redux, Flask/SQLAlchemy, and PostgreSQL, it offers a comprehensive Q&A platform for developers and is hosted on Render using Docker.",
+        QUnderstackGithub: "https://github.com/Sohna-AI/q-understack",
+        QUnderstackWebsite: "https://q-understack.onrender.com/",
 
-        NewsletterDesc: "A newsletter signup site made using Mailchimp API where the signups can be monitored from the MailChimp account. This project was made to understand API integration, environment variables and vercel deployment.",
-        NewsletterGithub: "",
-        NewsletterWebsite: "https://newsletter-signup-teal.vercel.app/",
-
-        WigglesDesc: "An innovative pet management web app enabling pet parents to create unique pet IDs, securely store and share vaccination records, and generate QR codes for pet profiles, enhancing safety.",
-        WigglesGithub: "https://github.com/DevanshSahni/Wiggles",
-        WigglesWebsite: "https://wiggles.vercel.app/",
+        GrandLineGatheringsDesc: "A MeetUp clone developed with React/Redux, Express/Sequelize, and PostgreSQL. This platform facilitates event organization and community engagement, demonstrating a strong grasp of full-stack development and database management.",
+        GrandLineGatheringsGithub: "https://github.com/Forestbriggs/Grand-line-gatherings",
+        GrandLineGatheringsWebsite: "https://grand-line-gatherings.onrender.com/",
     }
 
     let show = '';
-    if (desc[projectName + 'Github'] === "") {
+    if (desc[nameKey + 'Github'] === "") {
         show = "none";
     }
 
     return (
         <div className='projectBox'>
-            <img className='projectPhoto' src={projectPhoto} alt="Project display" />
+            <img className='projectPhoto' src={projectPhoto} alt={`${projectName} Display`} />
             <div>
                 <br />
                 <h3>{projectName}</h3>
                 <br />
-                {desc[projectName + 'Desc']}
+                {desc[nameKey + 'Desc']}
                 <br />
 
-                <a style={{ display: show }} href={desc[projectName + 'Github']} target='_blank' rel='noreferrer noopener'>
+                <a style={{ display: show }} href={desc[nameKey + 'Github']} target='_blank' rel='noreferrer noopener'>
                     <button className='projectbtn'><FaGithub /> Github</button>
                 </a>
 
-                <a href={desc[projectName + 'Website']} target='_blank' rel='noreferrer noopener'>
+                <a href={desc[nameKey + 'Website']} target='_blank' rel='noreferrer noopener'>
                     <button className='projectbtn'><CgFileDocument /> Demo</button>
                 </a>
             </div>
