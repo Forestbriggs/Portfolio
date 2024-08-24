@@ -10,6 +10,8 @@ import MoveToTop from "./Components/MoveToTop";
 import Lottie from "lottie-react";
 import nightsky from "./LottieFiles/night-sky.json";
 import HashLoader from "react-spinners/HashLoader";
+import { SpeedInsights } from "@vercel/speed-insights/react";
+import { Analytics } from "@vercel/analytics/react";
 
 
 function App() {
@@ -25,7 +27,7 @@ function App() {
     }, [])
 
     return (
-        <>
+        <div>
             {Loading ? (
                 <div className="loader">
                     <HashLoader
@@ -56,7 +58,9 @@ function App() {
                     <Footer />
                 </div>
             )}
-        </>
+            <SpeedInsights />
+            <Analytics />
+        </div>
     );
 }
 
