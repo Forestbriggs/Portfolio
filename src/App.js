@@ -15,20 +15,20 @@ import { Analytics } from "@vercel/analytics/react";
 
 
 function App() {
-    const [Loading, SetLoading] = useState(true);
+    // const [Loading, SetLoading] = useState(true);
 
-    useEffect(() => {
-        SetLoading(true)
+    // // useEffect(() => {
+    // //     SetLoading(true)
 
-        setTimeout(() => {
-            SetLoading(false)
-        }
-            , 1900)
-    }, [])
+    // //     setTimeout(() => {
+    // //         SetLoading(false)
+    // //     }
+    // //         , 1900)
+    // // }, [])
 
     return (
         <div>
-            {Loading ? (
+            {/* {Loading ? (
                 <div className="loader">
                     <HashLoader
                         color={'#9067C6'}
@@ -38,26 +38,28 @@ function App() {
                         data-testid="loader"
                     />
                 </div>
-            ) : (
-                <div>
+            ) :  */}
+            (
+            <div>
 
-                    <Lottie className="bg" animationData={nightsky} loop={true} />
-                    <Lottie className="bgtwo" animationData={nightsky} loop={true} />
-                    <Lottie className="bgtemp" animationData={nightsky} loop={true} />
+                <Lottie className="bg" animationData={nightsky} loop={true} />
+                <Lottie className="bgtwo" animationData={nightsky} loop={true} />
+                <Lottie className="bgtemp" animationData={nightsky} loop={true} />
 
-                    <Nav />
-                    <MoveToTop />
+                <Nav />
+                <MoveToTop />
 
-                    <Routes>
-                        <Route path="/" element={<Home />} />
-                        <Route path="/About" element={<About />} />
-                        <Route path="/Project" element={<Project />} />
-                        <Route path="/Resume" element={<Resume />} />
-                    </Routes>
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/About" element={<About />} />
+                    <Route path="/Project" element={<Project />} />
+                    <Route path="/Resume" element={<Resume />} />
+                </Routes>
 
-                    <Footer />
-                </div>
-            )}
+                <Footer />
+            </div>
+            )
+            {/* } */}
             <SpeedInsights />
             <Analytics />
         </div>

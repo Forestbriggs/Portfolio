@@ -99,6 +99,7 @@ b {
     cursor: pointer;
 }
 
+
 .NavbarLinks {
     display: flex;
     justify-content: space-between;
@@ -152,6 +153,10 @@ b {
 @media(max-width:800px) {
     .Navbar {
         width: 100%;
+    }
+
+    .Logo>img {
+        height: 60px;
     }
 
     .NavbarLinks {

@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { AiOutlineHome } from "react-icons/ai";
 import { BsPerson, BsCodeSlash } from "react-icons/bs";
 import { CgFileDocument } from "react-icons/cg";
@@ -8,6 +8,7 @@ import { CgFileDocument } from "react-icons/cg";
 
 const Nav = () => {
     const [navbarblur, setnavbarblur] = useState(false);
+    const navigate = useNavigate();
 
     function scrollHandler() {
         if (window.scrollY >= 20) {
@@ -16,6 +17,10 @@ const Nav = () => {
         else {
             setnavbarblur(false);
         }
+    }
+
+    const navigateHome = () => {
+        return navigate('/')
     }
 
     var showMenu = () => {
@@ -42,8 +47,8 @@ const Nav = () => {
     return (
         <nav className={navbarblur ? 'Navbar blur' : 'Navbar'}>
 
-            <h1 title='Reload' onClick={() => window.location.reload(true)} className='Logo'>
-                <img src='/images/circle-logo.png' alt='Forest Briggs Logo' height={50}></img>
+            <h1 title='Reload' onClick={navigateHome} className='Logo'>
+                <img src='/images/Forest_Briggs_Logo_CLear-5.png' alt='Forest Briggs Logo' height={80}></img>
             </h1>
 
             <div className='Hamburger' onClick={showMenu}>
