@@ -1,8 +1,7 @@
 import React from 'react';
 import Skills from './Skills.js';
 import Tilt from 'react-parallax-tilt';
-import Lottie from "lottie-react"
-import Coder from '../LottieFiles/coder.json';
+import Me from '../images/Me.png';
 
 const About = () => {
     return (
@@ -15,18 +14,13 @@ const About = () => {
                         I'm a <b>Full stack web developer</b> and recent graduate of <b>App Academy</b>. <br /><br />
                         I love to create innovative projects with intuitive designs, you can check out some of my work in the projects section.<br /><br />
                         I am <b>open</b> to new collaborations or work where I can contribute and grow. Feel free to connect with me, links are in the footer.<br />
-                        Apart from coding I love Jesus
-                        {/* TODO add something here */}
+                        Apart from coding I love to go on <b>hikes</b> and <b>play guitar</b>, also I can enjoy a good board game!
                     </p>
                 </div>
 
                 <div>
                     <Tilt>
-                        <Lottie
-                            className="illustration"
-                            animationData={Coder}
-                            loop={true}
-                        />
+                        <img height={400} className='Me' src={Me} alt="Me" />
                     </Tilt>
                 </div>
 
@@ -53,6 +47,7 @@ const About = () => {
                 <Skills skill='Npm' />
 
             </div>
+
         </>
     )
 }

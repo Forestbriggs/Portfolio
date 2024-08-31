@@ -26,6 +26,7 @@ const Skills = ({ skill }) => {
     return (
         <div title={skill} className='SkillBox'>
             {icon[skill]}
+            <p>{skill}</p>
         </div>
     )
 }
