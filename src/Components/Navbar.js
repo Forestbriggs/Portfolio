@@ -48,7 +48,7 @@ const Nav = () => {
         <nav className={navbarblur ? 'Navbar blur' : 'Navbar'}>
 
             <h1 title='Reload' onClick={navigateHome} className='Logo'>
-                <img src='/images/Forest_Briggs_Logo_CLear-5.png' alt='Forest Briggs Logo' height={80}></img>
+                <img src='/pub-images/Logo.png' alt='Forest Briggs Logo' height={80}></img>
             </h1>
 
             <div className='Hamburger' onClick={showMenu}>
