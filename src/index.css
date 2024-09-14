@@ -273,9 +273,7 @@ b {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('./images/HomePic.png');
-    background-size: cover;
-    background-position: 1px;
+    object-fit: cover;
 }
 
 @media(max-width: 500px) {
@@ -306,9 +304,6 @@ b {
     .Avatar-Container {
         width: 300px;
         height: 400px;
-        background-image: url('./images/HomePic.png');
-        background-size: cover;
-        background-position: 1px;
         margin: 0 auto;
     }
 }
@@ -502,6 +497,14 @@ b {
     cursor: pointer;
     text-decoration: none;
     border-style: none;
+
+    transition: all 0.5s;
+}
+
+.projectbtn:hover {
+    transition: all 0.5s;
+    background-color: #E7E7E7;
+    color: #431f47;
 }
 
 

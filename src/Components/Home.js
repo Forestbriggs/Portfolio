@@ -3,6 +3,7 @@ import Lottie from "lottie-react";
 import SpaceBoy from "../LottieFiles/SpaceBoy.json";
 import Typed from "./Typed.js";
 import Tilt from 'react-parallax-tilt';
+import HomePic from '../images/HomePic.png';
 import { CiCoffeeCup } from "react-icons/ci";
 
 const Home = () => {
@@ -42,7 +43,7 @@ const Home = () => {
                     </p>
                 </div>
                 <Tilt>
-                    <div className='Avatar-Container' />
+                    <img className='Avatar-Container' src={HomePic} alt="Forest Briggs" />
                 </Tilt>
             </div>
         </div>
