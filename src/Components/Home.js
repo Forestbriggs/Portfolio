@@ -33,10 +33,10 @@ const Home = () => {
                         From a young age, I’ve been captivated by the inner workings of computers, and that fascination has only grown stronger over time.
                         Today, it fuels my drive to tackle and solve complex problems, which I find immensely satisfying and rewarding.<br /><br />
 
-                        I am fluent in <b>Javascript</b> and <b>Python</b> and am currently working on a few
+                        I am fluent in <b>TypeScript</b> and <b>Python</b> and am currently working on a few
                         projects utilizing <b>React</b> and <b>Flask</b>.<br />
 
-                        I plan to learn <b>Typescript</b>, <b>GO</b> and <b>React Native</b> in the near future. <br /><br />
+                        I plan to learn <b>GO</b> and <b>React Native</b> in the near future. <br /><br />
 
                         Also, I love <b>coffee</b> <CiCoffeeCup style={{ scale: "1.5", rotate: "15deg" }} />
                     </p>
